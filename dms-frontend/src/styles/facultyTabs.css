@@ -1,0 +1,29 @@
+.tabs-container {
+  display: flex;
+  background: #f1f1f1;
+  border-radius: 12px;
+  padding: 6px;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.tab {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.6s ease;
+}
+
+.tab.active {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.tab svg {
+  margin-right: 6px;
+}
+

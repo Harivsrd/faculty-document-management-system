@@ -1,0 +1,139 @@
+/* PAGE WRAPPER */
+.admin-page {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+  width: 100%;
+  min-height: min( 81.7vh,84vh);
+}
+
+/* HEADER */
+.page-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.page-header p {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* ERROR */
+.error-text {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+/* =========================
+   STATS GRID (FIXED)
+========================= */
+.stats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+  gap: 20px;
+  width: 100%;
+}
+
+/* =========================
+   STAT CARD
+========================= */
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  width: 100%;
+}
+
+.stat-icon {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.stat-card h4 {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.stat-card h2 {
+  margin: 6px 0;
+  font-size: 28px;
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* COLORS */
+.stat-card.blue { border-top: 4px solid #2563eb; }
+.stat-card.purple { border-top: 4px solid #7c3aed; }
+.stat-card.yellow { border-top: 4px solid #f59e0b; }
+.stat-card.green { border-top: 4px solid #16a34a; }
+.stat-card.red { border-top: 4px solid #dc2626; }
+
+/* =========================
+   SKELETON LOADER
+========================= */
+.skeleton {
+  pointer-events: none;
+}
+
+.skeleton-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.skeleton-line {
+  height: 12px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.skeleton-line.title { width: 70%; }
+.skeleton-line.value {
+  width: 45%;
+  height: 24px;
+}
+.skeleton-line.subtitle { width: 85%; }
+
+/* SHIMMER */
+.skeleton,
+.skeleton-icon,
+.skeleton-line {
+  background: linear-gradient(
+    90deg,
+    #e5e7eb 25%,
+    #f3f4f6 37%,
+    #e5e7eb 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .page-header h2 {
+    font-size: 22px;
+  }
+  .admin-page{
+    min-height: max(81.7vh,84vh)
+  }
+  .stat-card {
+    padding: 16px;
+  }
+}
+
+/* GLOBAL FIX */
+body {
+  overflow-x: hidden;
+}

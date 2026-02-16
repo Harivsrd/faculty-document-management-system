@@ -1,0 +1,12 @@
+
+
+/* FOOTER */
+.copyright-footer {
+  margin-top: auto;          /* keeps footer at bottom */
+  text-align: center;
+  padding: 10px;
+  background-color: #f8fafc; /* light clean background */
+  color: #475569;
+  font-size: 13px;
+  border-top: 1px solid #e5e7eb;
+}

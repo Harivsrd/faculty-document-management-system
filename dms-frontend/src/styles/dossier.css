@@ -1,0 +1,160 @@
+.dossier-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dossier-header {
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dossier-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.dossier-header p {
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+.dossier-btn {
+  background: white;
+  color: #2563eb;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 500;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.info-grid label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background: #f9fafb;
+  text-align: left;
+  padding: 12px;
+}
+
+.table td {
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.btn-outline {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.note-box {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 14px;
+  border-radius: 10px;
+  color: #1e3a8a;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions svg {
+  cursor: pointer;
+  font-size: 18px;
+  color: #374151;
+  transition: color 0.2s ease;
+}
+
+.actions svg:hover {
+  color: #2563eb;
+}
+
+.card h3 svg {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.skeleton-row {
+  height: 18px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #e5e7eb 25%,
+    #f3f4f6 37%,
+    #e5e7eb 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton 1.4s ease infinite;
+  border-radius: 6px;
+}
+
+.skeleton-line {
+  height: 14px;
+  width: 100%;
+  margin: 6px 0;
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+
+.skeleton-header {
+  height: 36px;
+  width: 300px;
+  background: #e5e7eb;
+  border-radius: 8px;
+}
+
+@keyframes skeleton {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+.approve-icon {
+  color: #16a34a;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.reject-icon {
+  color: #dc2626;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.approve-icon:hover,
+.reject-icon:hover {
+  transform: scale(1.15);
+}
